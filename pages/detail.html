@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Detail</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../styles/styles.css" />
+		<link rel="stylesheet" href="../styles/detail.css" />
+	</head>
+	<body>
+		<div class="container">
+			<nav class="navbar">
+				<div class="nav_icon" id="toggleSidebar">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+			</nav>
+			<main>
+				<div class="main__container">
+					<div class="charts">
+						<span
+							><a href="../pages/dashboard.html">
+								<i class="fa fa-arrow-circle-left"></i>
+							</a>
+						</span>
+						<div class="charts__right">
+							<div class="charts__right__title">
+								<div>
+									<h1>Details</h1>
+									<p>Post details</p>
+								</div>
+								<i class="fa fa-info-circle" aria-hidden="true"></i>
+							</div>
+
+							<div class="charts__right__cards">
+								<!-- <div class="card1">
+									<div class="card1__body">
+										<div>
+											<h1>User id</h1>
+											<p>title</p>
+											<p>id</p>
+										</div>
+										<div class="card1__button__group">
+											<button class="card1__button__get">save</button>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<div id="sidebar">
+				<div class="sidebar__title">
+					<div class="sidebar__img">
+						<span class="sidebar__icons"><i class="fa fa-dashcube"></i></span>
+						<h1 class="sidebar__heading">My dashboard</h1>
+					</div>
+					<i
+						id="closeSidebar"
+						class="fa fa-times"
+						id="sidebarIcon"
+						aria-hidden="true"
+					></i>
+				</div>
+
+				<div class="sidebar__menu">
+					<div class="sidebar__link active_menu_link">
+						<i class="fa fa-home"></i>
+						<a href="#">Dashboard</a>
+					</div>
+					<h2>Account</h2>
+					<div class="sidebar__link">
+						<i class="fa fa-user-secret" aria-hidden="true"></i>
+						<a href="#">User</a>
+					</div>
+					<div class="sidebar__link">
+						<i class="fa fa-info-circle" aria-hidden="true"></i>
+						<a href="#">Details</a>
+					</div>
+					<div class="sidebar__logout">
+						<i class="fa fa-power-off"></i>
+						<a href="#">Log out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="module" src="../js/detail.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>

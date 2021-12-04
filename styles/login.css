@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.login__container {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	box-shadow: 4px 5px 15px 1px #a5aaad;
+	padding: 5rem;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.login__container > * {
+	margin-top: 1rem;
+}
+
+.login__user {
+	text-align: center;
+	font-size: 2em;
+	color: #35a4ba;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+input {
+	padding: 0.5rem 1rem 0.5rem 0rem;
+	text-align: center;
+	outline: #35a4ba;
+	font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+button {
+	height: 35px;
+	margin: auto;
+	width: 100px;
+	border: none;
+	box-shadow: 4px 5px 15px 1px #a5aaad;
+	cursor: pointer;
+	background-color: #35a4ba;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+p {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.loader {
+	visibility: hidden;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+#toast {
+	visibility: hidden;
+	min-width: 198px;
+	/* background-color: #35a4ba; */
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 22px;
+	z-index: 1;
+	bottom: 30px;
+	font-size: 17px;
+}   
+
+#toast.show {
+	visibility: visible !important;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadein {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 978px) {
+	.login__container {
+		padding: 3rem;
+	}
+}
+
+@media only screen and (max-width: 855px) {
+	.login__container {
+		padding: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.login__container {
+		padding: 1rem;
+	}
+}

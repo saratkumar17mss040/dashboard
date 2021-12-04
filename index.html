@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./styles/login.css" />
+	</head>
+	<body>
+		<main>
+			<form class="login__container">
+				<span class="login__user">
+					<i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+				</span>
+				<label for="idLabel"><p>Enter your user id:</p> </label>
+				<input type="number" id="userId" placeholder="user id" required />
+				<button id="loginBtn" type="button">
+					<a id="loginLink" href="#">Login </a>
+				</button>
+				<div class="loader">
+					<img src="./assets/Rainbow.gif" alt="loader" />
+				</div>
+				<div id="toast"></div>
+			</form>
+		</main>
+		<script type="module" src="./js/index.js"></script>
+	</body>
+</html>
