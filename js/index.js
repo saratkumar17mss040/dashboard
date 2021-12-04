@@ -102,8 +102,7 @@ function createToast(isLoginSuccess) {
 			toast.textContent = 'Login successful !';
 			toast.style.backgroundColor = '#35a4ba';
 			toast.className.replace('show', '');
-			location.href =
-				'https://saratkumar17mss040.github.io/dashboard/pages/dashboard.html';
+			location.href += '/pages/dashboard.html';
 			loginBtn.removeEventListener('click', isLoginSuccessOrFail);
 		} else {
 			toast.textContent = 'Login failed !';
