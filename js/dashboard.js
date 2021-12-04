@@ -93,7 +93,7 @@ function gotoDetailsPage(event) {
 		return currentTitle === title;
 	});
 
-	location.href = `dashboard/pages/detail.html?&id=${postInfo[0].id}`;
+	location.href = `https://saratkumar17mss040.github.io/dashboard/pages/detail.html?&id=${postInfo[0].id}`;
 }
 
 function deletePostInfo(event) {
