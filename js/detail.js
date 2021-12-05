@@ -24,7 +24,7 @@ function displayInfo() {
 				.then((postData) => {
 					if (postData) {
 						localStorage.setItem('postInfo', JSON.stringify(data));
-						console.log('postInfo saved !');
+						alert('postInfo saved in local storage.');
 					}
 				})
 				.catch((err) => {
