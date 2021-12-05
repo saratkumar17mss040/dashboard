@@ -76,7 +76,6 @@ p {
 #toast {
 	visibility: hidden;
 	min-width: 198px;
-	/* background-color: #35a4ba; */
 	color: #fff;
 	text-align: center;
 	border-radius: 2px;
@@ -84,23 +83,12 @@ p {
 	z-index: 1;
 	bottom: 30px;
 	font-size: 17px;
-}   
+}
 
 #toast.show {
 	visibility: visible !important;
 	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
 	animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-	from {
-		bottom: 0;
-		opacity: 0;
-	}
-	to {
-		bottom: 30px;
-		opacity: 1;
-	}
 }
 
 @keyframes fadein {
@@ -114,16 +102,16 @@ p {
 	}
 }
 
-@-webkit-keyframes fadeout {
+/* @keyframes fadein {
 	from {
-		bottom: 30px;
-		opacity: 1;
-	}
-	to {
 		bottom: 0;
 		opacity: 0;
 	}
-}
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+} */
 
 @keyframes fadeout {
 	from {
@@ -135,6 +123,18 @@ p {
 		opacity: 0;
 	}
 }
+
+/* 
+@keyframes fadeout {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+} */
 
 @media only screen and (max-width: 978px) {
 	.login__container {
