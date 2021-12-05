@@ -81,6 +81,7 @@ function findAndDisplayStats() {
 		})
 		.catch((err) => {
 			console.error('Error in fetching data: ', err.message);
+			alert('Error in fetching data: ', err.message);
 		});
 }
 
@@ -93,7 +94,7 @@ function gotoDetailsPage(event) {
 		return currentTitle === title;
 	});
 
-	location.href = `https://saratkumar17mss040.github.io/dashboard/pages/detail.html?&id=${postInfo[0].id}`;
+	location.href = `/dashboard/pages/detail.html?&id=${postInfo[0].id}`;
 }
 
 function deletePostInfo(event) {

@@ -4,13 +4,9 @@ const closeSidebarIcon = document.getElementById('closeSidebar');
 const loginBtn = document.getElementById('loginBtn');
 const userIdInput = document.getElementById('userId');
 const loader = document.querySelector('.loader');
-const loginContainer = document.querySelector('.login__container');
 
 let sidebarOpen = false;
 const url = 'https://jsonplaceholder.typicode.com/';
-
-// const loginLink = document.querySelector('.loginLink');
-// const sidebarCloseIcon = document.getElementById('sidebarIcon');
 
 function toggleSidebar() {
 	if (!sidebarOpen) {
@@ -82,6 +78,7 @@ function isLoginSuccessOrFail(event) {
 			})
 			.catch((err) => {
 				console.error('Error in fetching data: ', err.message);
+				alert('Error in fetching data: ', err.message);
 			});
 	}
 }
@@ -102,7 +99,7 @@ function createToast(isLoginSuccess) {
 			toast.textContent = 'Login successful !';
 			toast.style.backgroundColor = '#35a4ba';
 			toast.className.replace('show', '');
-			location.href += '/pages/dashboard.html';
+			location.href = '/dashboard/pages/dashboard.html';
 			loginBtn.removeEventListener('click', isLoginSuccessOrFail);
 		} else {
 			toast.textContent = 'Login failed !';

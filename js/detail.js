@@ -29,6 +29,7 @@ function displayInfo() {
 				})
 				.catch((err) => {
 					console.error('Error in fetching data: ', err.message);
+					alert('Error in fetching data: ', err.message);
 				});
 		});
 	});
